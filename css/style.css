@@ -19,7 +19,10 @@ body{
     padding-right: 0;
     margin: 0;
     background: black;
-    font-size: 0.5em;
+    font-size: 1.5em;
+}
+hr{
+    border: 1px solid aqua;
 }
 
 
@@ -36,6 +39,9 @@ body{
 
     z-index: 1000;
 
+}
+.menu hr{
+    border: 1px solid white;
 }
 
 .menu a {
