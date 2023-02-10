@@ -1,0 +1,189 @@
+/* content advice for my websie
+ * https://content.wisestep.com/put-avoid-personal-website/
+ *https://www.careeraddict.com/7-things-you-should-include-on-your-personal-website
+ *https://smallbiztrends.com/2013/10/things-your-website-should-do.html
+ */
+
+
+div{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    color: aqua;
+    font-family: 'Aboreto', cursive;
+    padding: 0;
+    padding-right: 0;
+    margin: 0;
+    background: black;
+    font-size: 0.5em;
+}
+
+
+/* this is the container for the whole page */
+
+/* this is the menue area */
+.menu{
+    position: fixed;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    opacity: 0.85;
+
+    z-index: 1000;
+
+}
+
+.menu a {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    color: aqua;
+    font-family:'Courier New', Courier, monospace;
+    color: aqua;
+    padding-left: 25px;
+    text-decoration: none;
+}
+/* this is the header area */
+.startingImg{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.BlkBoc{
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    color: aqua;
+    font-family: 'Aboreto', cursive;
+    opacity: 0.85;
+
+    position: absolute;
+    /* this will be chaned in mobile view */
+    /* top: 25%; */
+    top: 5%;
+}
+
+/* this is the class to store personal information */
+.infoBlock{
+    
+    width: 100%;
+    color: aqua;
+    font-family: 'Aboreto', cursive;
+    opacity: 0.85;
+    padding: 0;
+    margin: 0;
+}
+.infoBlock > h2,h3,p,a {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.infoBlock .Block1{
+    padding-left: 25px;
+}
+.infoBlock .Block2{
+    padding-left: 25px;
+}
+.infoBlock .Block3{
+    padding-left: 25px;
+}
+.container-squares{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 12px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item img{
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid aqua;
+    border-radius: 30px;
+}
+.item a{
+    padding: 0;
+}
+.item1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.item2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.item3{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.item4{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.linkgroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkgroup a{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid aqua;
+    border-radius: 30px;
+    text-decoration: none;
+    color: aqua;
+    font-family: 'Aboreto', cursive;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darlgrey;
+    text-align: center;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and ( min-width : 800px ) {
+
+
+
+.BlkBoc{
+    top: 25%;
+}
+
+.container-squares{
+    display: flex;
+
+}
+
+
+
+
+}
+
+
+
+
