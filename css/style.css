@@ -4,7 +4,17 @@
  *https://smallbiztrends.com/2013/10/things-your-website-should-do.html
  */
 
+/* container groups for the page **************************************************************************************************************8*/
+.main-container{ /* this is for the whole page to be segmented*/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
 
+
+
+
+/* this is the universal style for the page */
 div{
     padding: 0;
     margin: 0;
@@ -26,9 +36,8 @@ hr{
 }
 
 
-/* this is the container for the whole page */
 
-/* this is the menue area */
+/* this is the menue area *******************************************************************************************/
 .menu{
     position: fixed;
     background-color: black;
@@ -38,25 +47,33 @@ hr{
     opacity: 0.85;
 
     z-index: 1000;
-
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 2px;
 }
 .menu hr{
+    display: none;
     border: 1px solid white;
 }
 
 .menu a {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 2px;
     text-align: center;
     color: aqua;
     font-family:'Courier New', Courier, monospace;
     color: aqua;
     padding-left: 25px;
     text-decoration: none;
+    border: solid white;
+    border-radius: 20px;
 }
-/* this is the header area */
+/* this is the header area *****************************************************************************************************************************/
 .startingImg{
     grid-row: 1/2;
     grid-column: 1/2;
@@ -84,7 +101,7 @@ hr{
     top: 5%;
 }
 
-/* this is the class to store personal information */
+/* this is the class to store personal information *********************************************************************************************************/
 .infoBlock{
     
     width: 100%;
@@ -107,6 +124,9 @@ hr{
 .infoBlock .Block3{
     padding-left: 25px;
 }
+
+
+/* this is the square grid section ************************************************************************************************************************/
 .container-squares{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -148,6 +168,7 @@ hr{
     grid-row: 2/3;
     grid-column: 2/3;
 }
+/* this is the link section *********************************************************************************************************************************/
 .linkgroup{
     display: flex;
     justify-content: center;
@@ -162,11 +183,12 @@ hr{
     color: aqua;
     font-family: 'Aboreto', cursive;
 }
+/* this is the footer section ********************************************************************************************************************************/
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darlgrey;
+    background-color: tan;
     text-align: center;
     color: aqua;
     font-family: 'Times New Roman', Times, serif;
@@ -176,6 +198,24 @@ hr{
 
 body{
     font-size: 1.5em;
+}
+
+.menu a {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    color: aqua;
+    font-family:'Courier New', Courier, monospace;
+    color: aqua;
+    padding-left: 25px;
+    text-decoration: none;
+    border: none;
+}
+.menu hr{
+    display: block;
+    border: 1px solid white;
 }
 
 
