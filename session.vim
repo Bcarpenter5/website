@@ -13,8 +13,8 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +0 index.html
-badd +0 css/style.css
+badd +1 index.html
+badd +1 css/style.css
 argglobal
 %argdel
 $argadd index.html
@@ -35,8 +35,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 19 + 20) / 40)
-exe '2resize ' . ((&lines * 18 + 20) / 40)
+exe '1resize ' . ((&lines * 27 + 27) / 54)
+exe '2resize ' . ((&lines * 24 + 27) / 54)
 argglobal
 balt index.html
 setlocal fdm=manual
@@ -49,11 +49,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 13 - ((10 * winheight(0) + 9) / 19)
+let s:l = 68 - ((18 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 13
+keepjumps 68
 normal! 0
 wincmd w
 argglobal
@@ -72,15 +72,15 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 9) / 18)
+let s:l = 1 - ((0 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 19 + 20) / 40)
-exe '2resize ' . ((&lines * 18 + 20) / 40)
+exe '1resize ' . ((&lines * 27 + 27) / 54)
+exe '2resize ' . ((&lines * 24 + 27) / 54)
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

@@ -151,7 +151,47 @@ hr{
     font-family: 'Aboreto', cursive;
     font-size: 1.25em;
 }
+#resumelink a:hover{
+    background: aqua;
+    color: black;
+}
+/* this is the acomplishments section ************************************************************************************************************************/
 
+/*this is the container for the acomplishments */
+.acomplishments{
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+}
+.acomplishments img {
+    display: none;
+    width: auto;
+    /*this is for the mobile version only*/
+    height: 200px;
+    background-color: white;
+    border: solid black;
+    border-radius: 30px;
+}
+.acomplishments .content{
+    padding-left: 25px;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border: solid black;
+    font-family: 'Aboreto', cursive;
+}
+/*this is the items in the acomplishments section */
+#guacoTaco {
+    grid-row: 1/3;
+}
+#guacoTaco img{
+    grid-row: 3/4;
+}
 
 
 
@@ -244,10 +284,12 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: tan;
     text-align: center;
     color: aqua;
     font-family: 'Times New Roman', Times, serif;
+}
+footer{
+    background-color: black;
 }
 
 @media screen and ( min-width : 800px ) {
@@ -293,7 +335,7 @@ body{
 }
 #about img {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 .aboutMe{
